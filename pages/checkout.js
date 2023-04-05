@@ -44,7 +44,7 @@ const checkout = () => {
 
   return (
     <Layout>
-      {!productsInfos.length && <div>no products in your shopping cart</div>}
+      {!productsInfos.length && <div>No products in your shopping cart</div>}
       {productsInfos.length &&
         productsInfos.map((productsInfo, index) => {
           return (

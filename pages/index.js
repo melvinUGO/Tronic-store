@@ -11,7 +11,7 @@ export default function Home({ products }) {
   const categories = [...new Set(products?.map((product) => product.category))];
 
   if (phrase) {
-    products = data.filter((product) =>
+    products = products.filter((product) =>
       product.name.toLowerCase().includes(phrase)
     );
   }
@@ -31,8 +31,8 @@ export default function Home({ products }) {
           return (
             <div key={index}>
               {products.find((product) => product.category === category) && (
-                <div className="py-5">
-                  <h2 className="text-2xl capitalize p-3">{category}</h2>
+                <div className="py-5 pt-10">
+                  <h2 className="text-2xl capitalize py-3">{category}</h2>
                   <div className="flex -mx-5 overflow-x-scroll snap-x scrollbar-hide">
                     {products
                       .filter((p) => p.category === category)
