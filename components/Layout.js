@@ -22,7 +22,7 @@ const Layout = ({ children }) => {
         <img className=" w-full h-[50vh]" src="/logo.png" alt="" />
         <div></div>
       </div>
-      <div className="p-5 sm:p-16">
+      <div className="p-5 sm:p-16 md:px-28">
         {success && (
           <div className="mb-5 bg-green-400 text-white text-lg p-5 rounded-xl">
             Thanks for your order!
