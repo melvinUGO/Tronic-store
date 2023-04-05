@@ -2,7 +2,7 @@ import Layout from "@/components/Layout";
 import { ProductsContext } from "@/context/ProductsConctext";
 import React, { useContext, useEffect, useState } from "react";
 
-const Checkout = () => {
+const checkout = () => {
   const { selectedProducts, setSelectedProducts } = useContext(ProductsContext);
   const [productsInfos, setProductsInfos] = useState([]);
   const [address, setAddress] = useState("");
@@ -155,4 +155,4 @@ const Checkout = () => {
   );
 };
 
-export default Checkout;
+export default checkout;

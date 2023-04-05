@@ -34,7 +34,7 @@ const Footer = () => {
         <span>Home</span>
       </Link>
       <Link
-        href={"/Checkout"}
+        href={"/checkout"}
         className={
           (path === "/checkout" ? " text-emerald-500" : "") +
           " flex justify-center items-center flex-col"
